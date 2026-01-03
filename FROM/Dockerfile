@@ -1,1 +1,1 @@
-FROM amazonlinux:latest
+FROM almalinux:9
