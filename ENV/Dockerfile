@@ -14,6 +14,5 @@ ENV NGINX_DEFAULT_CONF=/etc/nginx/conf.d/default.conf
 ENV NGINX_INDEX_FILE=index.html
 ENV NGINX_ERROR_LOG=error.log
 ENV NGINX_ACCESS_LOG=access.log
-ENV NGINX_DAEMON_OFF=daemon off;
 ENV NGINX_ENV=production
 ENV PATH=$PATH:/usr/sbin/nginx
