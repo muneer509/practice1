@@ -14,3 +14,4 @@ WORKDIR /app/
 CMD ["sleep", "infinity"]
 RUN pwd
 RUN echo "This is the WORKDIR /app directory" > hello.txt
+# WORKDIR is used to set the working directory for subsequent instructions in the Dockerfile.
