@@ -5,8 +5,8 @@
 # This allows for dynamic configuration of the build process, such as specifying versions, paths, or other parameters that may vary between different builds.
 FROM almalinux:9
 ARG APP_VERSION=1.0.0
-ARG APP_ENV=test
-ARG APP_COMPONENT=backend
+ARG APP_ENV=${APP_ENV:-test}
+ARG APP_COMPONENT=${APP_COMPONENT:-web}
 RUN echo "Building application version: $APP_VERSION"
 RUN echo "Application environment: $APP_ENV"
 CMD ["sleep", "infinity"]
