@@ -9,5 +9,5 @@
 FROM almalinux:9
 # CMD ["ping", "google.com"]
 ENTRYPOINT ["ping"]
-CMD ["terraform.io "]
+# CMD ["twitter.com"]
 
