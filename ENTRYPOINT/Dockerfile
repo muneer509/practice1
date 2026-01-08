@@ -8,5 +8,6 @@
 # CMD ["google.com"]
 FROM almalinux:9
 # CMD ["ping", "google.com"]
-ENTRYPOINT ["ping", "github.com"]
+ENTRYPOINT ["ping"]
+CMD ["terraform.io "]
 
