@@ -15,9 +15,16 @@
 # RUN pwd
 # RUN echo "This is the WORKDIR /app directory" > hello.txt
 # # WORKDIR is used to set the working directory for subsequent instructions in the Dockerfile.
+# FROM almalinux:9
+# RUN mkdir -p /tmp/docker
+# RUN cd /tmp/docker
+# RUN pwd
+# RUN echo "This is the /tmp/docker directory" > hello.txt
+# CMD ["sleep", "infinity"]
 FROM almalinux:9
 RUN mkdir -p /tmp/docker
-RUN cd /tmp/docker
-RUN pwd
+WORKDIR /tmp/docker
 RUN echo "This is the /tmp/docker directory" > hello.txt
 CMD ["sleep", "infinity"]
+RUN useradd muneer
+USER muneer
