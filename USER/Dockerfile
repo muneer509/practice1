@@ -3,5 +3,9 @@
 # This helps to mitigate potential security risks and vulnerabilities that could arise from running applications with elevated privileges.
 FROM almalinux:9
 CMD ["sleep", "infinity"]
+CMD ["whoami"]
+CMD ["id"]
 run useradd expense
 USER expense
+CMD ["whoami"]
+CMD ["id"]
