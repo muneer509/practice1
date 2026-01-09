@@ -1,5 +1,10 @@
 # expense project MySQL Dockerfile
 FROM mysql:8.0
-COPY ./scripts/schema.sql /docker-entrypoint-initdb.d/schema.sql
-# This Dockerfile sets up a MySQL 8.0 database for the expense project.
+LABEL Owner="Muneer"
+LABEL Project="Expense Project"
+LABEL Component="MySQL Database"
+EXPOSE 3306
+ENV MYSQL_ROOT_PASSWORD=ExpenseApp@1
+ADD scripts/*.sql /docker-entrypoint-initdb.d/
+
 
