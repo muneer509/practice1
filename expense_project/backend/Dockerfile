@@ -3,7 +3,7 @@ LABEL Owner="Muneer"
 LABEL Project="Expense Project"
 LABEL Component="Backend API"
 ENV Component=backend
-ENV DB_HOST="mysql""
+ENV DB_HOST="mysql"
 EXPOSE 8080
 RUN mkdir -p /opt/server
 WORKDIR /opt/server
