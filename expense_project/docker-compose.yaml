@@ -1,0 +1,9 @@
+version: "3"
+networks:
+  expense:
+volumes:
+  mysql: # docker volume for mysql data
+services:
+  mysql:
+    
+
